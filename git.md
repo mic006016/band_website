@@ -32,4 +32,17 @@ git push
 
 # 원격 -> 로컬로 commit을 동기화 시킨다
 git pull
+
+# 브랜치 확인
+git branch
+
+# 브랜치 생성
+git branch 브랜치명
+
+# 브랜치 변경
+git checkout 브랜치명
+
+# 브랜치 병합
+# 병합 주체가 되는 브랜치로 checkout후 내 브랜치로 병합할 브랜치를 지정한다.
+get merge 대상 브랜치
 ```
