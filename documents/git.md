@@ -1,6 +1,7 @@
 # GIT
 
 ## 처음 한번만 실행하는 명령어
+
 ```bash
 # git hub, userid, email
 git config --global user.name "userid"
@@ -8,14 +9,16 @@ git config --global user.email "userid@mail.com"
 ```
 
 ## Repository 처음 생성한 후, 로컬폴더와 연동시키기
+
 ```bash
 # 내 로컬폴더에 git을 사용하게 설정
-git init 
+git init
 # 생성한 github repository와 연동 설정
 git remote add origin https://github.com/repository_name.git
 ```
 
 ## 작업 명령
+
 ```bash
 # 레퍼지토리를 복제
 git clone repository_name
