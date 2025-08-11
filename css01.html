@@ -7,12 +7,84 @@
     <title>CSS Inline</title>
     <!-- Internal style -->
     <style>
+      @font-face {
+        font-family: "Pretendard";
+        src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff")
+          format("woff");
+        font-weight: 300;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Pretendard";
+        src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+          format("woff");
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Pretendard";
+        src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff")
+          format("woff");
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Pretendard";
+        src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff")
+          format("woff");
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap;
+      }
+      /* normalize */
+      /* 태그 표기법 */
+      html,
+      body {
+        font-family: "Pretendard", sans-serif;
+        margin: 0; /* 바깥쪽 여백 */
+        padding: 0; /* 안쪽 여백 */
+      }
+      div {
+        text-align: center;
+      }
+
+      /* class 표기법 */
       .border-blue-bg-yellow {
         text-align: center;
         font-size: 30px;
         color: #ad255e;
         background-color: #ffff00;
         border: 5px dashed #737392;
+      }
+
+      .box01 {
+        border: 5px solid #f00;
+        /* margin-top: 30px; */
+        /* margin: 30px 0 60px 0; */
+        /*  margin: 30px 60px; */
+        /* margin-bottom: 60px;
+        margin-left: 0px;
+        margin-right: 0px; */
+        margin: 30px 0;
+        font-weight: 700;
+      }
+
+      .box02 {
+        border: 5px solid #00f;
+        padding: 30px;
+      }
+
+      .box03 {
+        border: 10px solid darkseagreen;
+        font-size: 20px;
+        line-height: 3;
+        letter-spacing: -1px;
       }
     </style>
   </head>
@@ -32,5 +104,12 @@
       바탕색은 노란색
     </div>
     <div class="border-blue-bg-yellow">바탕색은 노란색2</div>
+    <div class="box01">가</div>
+    <div class="box02">나</div>
+    <div class="box03">
+      동해물과
+      <br />
+      백두산이
+    </div>
   </body>
 </html>
