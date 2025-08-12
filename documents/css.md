@@ -24,17 +24,6 @@
 - 사이즈, 디자인과 관련된 것(margin, padding, border, background-color)은 상속되지 않는다.
 
 ## size
-- px
-- em
-- rem
-- vw(반응형때)
-- vh(반응형때)
-- **width와 height가 주어진 태그에 margin, padding, border를 주면 그 값은 width와 height에 포함되지 않는다.**
-- margin, height 에는 auto나 %가 적용되지 않는다.
+
 
 ## design
-- border: 1px solid #f00
-- background-color: #0f0
-
-### flex 참고사이트
-- [css-tricks flex](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
