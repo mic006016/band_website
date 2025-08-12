@@ -23,7 +23,9 @@
 - text-align: 
 - 사이즈, 디자인과 관련된 것(margin, padding, border, background-color)은 상속되지 않는다.
 
-## size
-
-
 ## design
+- border: 1px solid #f00;
+- background-color: #0f0;
+
+### flex 참고사이트
+- [css-tricks flex](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
