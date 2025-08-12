@@ -1,0 +1,45 @@
+.containers {
+  width: 100%;
+}
+
+.containers > .header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  background-color: #111;
+}
+
+.containers > .band-wrapper {
+
+}
+
+.containers > .tour-wrapper {
+
+}
+
+.containers > .contact-wrapper {
+
+}
+
+.containers > .footer-wrapper {
+
+}
+
+/* .header-wrapper */
+.header-wrapper > .nav-wrap {
+  display: flex;
+}
+.header-wrapper > .nav-wrap > a {
+  padding: 1em;
+  color: #fff;
+  text-decoration: none;
+}
+.header-wrapper > .search-btn {
+  background-color: #ff6600;
+  color: #fff;
+  padding: 1em;
+}
+
+/* banner-wrapper */
+.banner-wrapper > .banner-img {
+  width: 100%;
+}

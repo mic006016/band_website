@@ -26,3 +26,5 @@
 - ul(unsigned list), ol(order list)
   - li(list)
 - iframe
+- dd, dl, dt
+- fieldset, h1, h2, h3, h4, h5, h6

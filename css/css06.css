@@ -1,0 +1,55 @@
+.gnb-wrapper {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  border: 2px solid red;
+}
+
+/* 
+.name1.name2: name1과 name2가 다 있는 태그
+.name1 .name2 : name1 자손 중 name2를 가진 태그
+.name1 > .name2 : name1 바로 밑(자식)에 name2를 가진 태그
+ */
+
+.gnb-wrapper > .header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gnb-wrapper > .header-wrapper > .logo {
+  font-size: 40px;
+}
+
+.gnb-wrapper > .header-wrapper > .nav {
+  display: flex;
+  gap: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .gnb-wrapper > .header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.gnb-wrapper > .header-wrapper > .logo {
+  font-size: 40px;
+}
+.gnb-wrapper > .header-wrapper > .nav {
+  display: flex;
+  gap: 0 20px;
+} */
