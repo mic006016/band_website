@@ -1,0 +1,38 @@
+/* 적응형 */
+.wrapper {
+  width: 1280px;
+  margin: auto;
+}
+
+/* 반응형 */
+.rel {
+  width: 100%;
+  max-width: 1280px;
+  min-width: 480px;
+  margin-top: 20px;
+  /* border: 10px solid red; */
+}
+
+.header {
+  border: 3px solid red;
+}
+.header::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+.nav {
+  border: 3px solid green;
+  float: right;
+}
+.logo {
+  border: 3px solid blue;
+  float: left;
+}
+.item {
+  border: 3px solid grey;
+  float: left;
+}
+.clear {
+  clear: both;
+}

@@ -1,0 +1,44 @@
+.containers {
+  width:100%;
+  max-width: 600px;
+  margin: auto;
+  border: 3px solid red;
+  color: #111;
+}
+
+.list-wrapper {
+  border: 3px solid blue;
+}
+
+.list-wrapper .item {
+  border: 3px solid green;
+}
+
+.list-wrapper.ol-wrapper .item {
+  border: 3px solid magenta;
+}
+
+.link-wrapper {
+  margin: 50px 0;
+}
+
+.link-wrapper a.item {
+  border: 3px solid red;
+  padding: 1em 1.5em;
+}
+
+.link-wrapper a.item:link {
+  /* color: orange; */
+}
+
+.link-wrapper a.item:visited {
+  color: lightgreen;
+}
+
+.link-wrapper a.item:active {
+  /* color: black; */
+}
+
+.link-wrapper a.item:hover {
+  color: pink;
+}

@@ -1,0 +1,29 @@
+.containers {
+  width: 100%;
+  max-width: 650px;
+  margin: auto;
+  border: 3px solid red;
+  position: relative;
+  display: none;
+}
+
+.containers .dog-wrap {
+  width: 100%;
+  max-width: 400px;
+  margin: 100px auto;
+  border: 10px solid blue;
+  position: relative;
+  top: 200px;
+}
+
+.dog-wrap .dog1 {
+  position: sticky;
+  top: 100px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  border: 10px solid red;
+  display: block;
+}

@@ -2,26 +2,11 @@
 
 /* 변수 */
 :root {
-  --text-dark: #111;
-  --text-dark-875: rgba(0, 0, 0, 0.875);
-  --text-dark-75: rgba(0, 0, 0, 0.75);
-  --text-dark-625: rgba(0, 0, 0, 0.625);
-  --text-dark-5: rgba(0, 0, 0, 0.5);
-  --text-dark-25: rgba(0, 0, 0, 0.25);
-  --text-light: #f8f8f8;
-  --text-light-875: rgba(255, 255, 255, 0.875);
-  --text-light-75: rgba(255, 255, 255, 0.75);
-  --text-light-625: rgba(255, 255, 255, 0.625);
-  --text-light-5: rgba(255, 255, 255, 0.5);
-  --text-light-25: rgba(255, 255, 255, 0.25);
-  --text-gray: #999;
-
-  --bg-active: #ff5100;
+  --text-primary: #111;
 }
 
 :root[data-darktheme="true"] {
-  --text-dark: #f8f8f8;
-  --text-light: #111;
+  --text-primary: #f8f8f8;
 }
 
 /* 전체 */
@@ -116,7 +101,7 @@ li {
 }
 
 a {
-  color: inherit;
+  color: #111;
   text-decoration: none;
   cursor: pointer;
 }
