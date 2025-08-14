@@ -2,6 +2,15 @@
 
 /* 변수 */
 :root {
+  --text-3: #333;
+  --text-5: #555;
+  --text-7: #777;
+  --text-9: #999;
+  --text-a: #aaa;
+  --text-b: #bbb;
+  --text-c: #ccc;
+  --text-d: #ddd;
+  --text-e: #eee;
   --text-dark: #111;
   --text-dark-875: rgba(0, 0, 0, 0.875);
   --text-dark-75: rgba(0, 0, 0, 0.75);
@@ -12,8 +21,7 @@
   --text-light-875: rgba(255, 255, 255, 0.875);
   --text-light-75: rgba(255, 255, 255, 0.75);
   --text-light-625: rgba(255, 255, 255, 0.625);
-  --text-light-5: rgba(255, 255, 255, 0.5);
-  --text-light-25: rgba(255, 255, 255, 0.25);
+  --text-light-5: rgba(255, 255, 255, 0.625);
   --text-gray: #999;
 
   --bg-active: #ff5100;
@@ -63,6 +71,7 @@ button {
 fieldset,
 img {
   border: 0 none;
+  vertical-align: middle;
 }
 dl,
 ul,
@@ -147,4 +156,45 @@ h6 {
   padding: 0;
   font-size: 1em;
   font-weight: inherit;
+}
+
+/* 사용자 정의 */
+input[type="text"],
+input[type="password"],
+input[type="number"],
+select,
+textarea {
+  padding: 0.5em 0.75em;
+  border: 1px solid var(--text-c);
+  color: var(--text-5);
+  border-radius: 0.25em;
+}
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+  border: 1px solid var(--text-7);
+  outline: none;
+}
+select {
+  padding: 0.5em 0.75em 0.5em 0.25em;
+}
+textarea {
+  font-family: inherit;
+}
+
+/* + : sibling 연산자 */
+input[type="radio"], 
+input[type="checkbox"] {
+  margin-right: 0.25em;
+  cursor: pointer;
+}
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+  margin-right: 1em;
+  cursor: pointer;
+}
+.w-100 {
+  width: 100%;
 }

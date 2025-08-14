@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form elements</title>
+    <link rel="stylesheet" href="./css/fonts.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/form.css" />
+  </head>
+  <body>
+    <div class="containers">
+      <h1 class="title">Member Join</h1>
+      <form action="#" name="joinForm">
+        <ul class="form-wrapper">
+          <li class="form-item">
+            <div class="form-nm">이름</div>
+            <div class="form-data">
+              <input type="text" name="usrNm" />
+            </div>
+          </li>
+          <li class="form-item">
+            <div class="form-nm">아이디</div>
+            <div class="form-data">
+              <input type="text" name="usrId" />
+            </div>
+          </li>
+          <li class="form-item">
+            <div class="form-nm">비밀번호</div>
+            <div class="form-data">
+              <input type="password" name="usrPw" />
+            </div>
+          </li>
+          <li class="form-item">
+            <div class="form-nm">성별</div>
+            <div class="form-data">
+              <input type="radio" id="genderM" name="gender" value="M" />
+              <label for="genderM">남자</label>
+              <input type="radio" id="genderF" name="gender" value="F" />
+              <label for="genderF">여자</label>
+              <input type="radio" id="genderA" name="gender" value="A" />
+              <label for="genderA">외계인</label>
+            </div>
+          </li>
+          <li class="form-item">
+            <div class="form-nm">취미</div>
+            <div class="form-data">
+              <input type="checkbox" id="hobbyB" name="hobby" value="B" />
+              <label for="hobbyB">숨쉬기</label>
+              <input type="checkbox" id="hobbyS" name="hobby" value="S" />
+              <label for="hobbyS">잠자기</label>
+              <input type="checkbox" id="hobbyM" name="hobby" value="A" />
+              <label for="hobbyM">영화보기</label>
+            </div>
+          </li>
+          <li class="form-item">
+            <div class="form-nm">가입경로</div>
+            <div class="form-data">
+              <select>
+                name="joinMethod"
+                <option value="D">지나가다</option>
+                /* default */
+                <option value="I">인터넷을 보고</option>
+                /* internet */
+                <option value="C">당근마켓을 보고</option>
+                /* carrot */
+              </select>
+            </div>
+          </li>
+          <li class="form-item">
+            <div class="form-nm">남기는 말</div>
+            <div class="form-data">
+              <textarea
+                name="comment"
+                class="comment-ta"
+                placeholder="여기에 남기실 말을 작성해주세요."
+              ></textarea>
+            </div>
+          </li>
+        </ul>
+        <div class="btn-wrapper">
+          <button type="submit" class="join-btn">가입</button>
+          <button type="reset" class="cancel-btn">취소</button>
+          <!-- <button type="button" >버튼</button> : 커스텀용 -->
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

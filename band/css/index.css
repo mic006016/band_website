@@ -26,6 +26,8 @@
 }
 
 .containers > .footer-container {
+  padding: 7em 0;
+  text-align: center;
 }
 .container > .wrapper {
   width: 100%;
@@ -36,7 +38,7 @@
 }
 .container > .wrapper > .title {
   font-size: 2em;
-  letter-spacing: 0.25em;
+  letter-spacing: 0.325em;
   text-align: center;
   margin-bottom: 1em;
 }
@@ -135,7 +137,6 @@
 
 /* tour-container */
 .tour-container > .tour-wrapper {
-  padding: 5em 0;
 }
 .tour-container > .tour-wrapper > .tour-title {
   color: var(--text-light);
@@ -143,18 +144,19 @@
 .tour-container > .tour-wrapper > ul.tour-dates {
   background-color: var(--text-light);
   border: 1px solid var(--text-dark-25);
+  margin-bottom: 1.5em;
 }
 .tour-container > .tour-wrapper > .tour-dates > li.tour-date {
   border-bottom: 1px solid var(--text-dark-25);
   padding: 0.625em 1em;
   display: flex;
   align-items: center;
-  color: var(--text-dar-625);
+  color: var(--text-dark-625);
 }
 .tour-container > .tour-wrapper > .tour-dates > li.tour-date:last-child {
   border-bottom: none;
 }
-.tour-container > .tour-wrapper > .tour-dates >.tour-date > .soldout {
+.tour-container > .tour-wrapper > .tour-dates > .tour-date > .soldout {
   background-color: var(--bg-active);
   color: var(--text-light);
   font-size: 0.875em;
@@ -162,12 +164,179 @@
   border-radius: 0.25em;
   margin-left: 1em;
 }
-.tour-container > .tour-wrapper > .tour-dates >.tour-date > .tickets {
+.tour-container > .tour-wrapper > .tour-dates > .tour-date > .tickets {
   background-color: var(--text-dark);
   color: var(--text-light);
   font-size: 0.875em;
-  padding: 0.25em 0.5em;
+  padding: 0.25em 0.75em;
   border-radius: 50%;
   margin-left: auto;
   margin-right: 1em;
+}
+
+.tour-container > .tour-wrapper > .tour-cities {
+  display: flex;
+  justify-content: space-between;
+}
+.tour-container > .tour-wrapper > .tour-cities > .tour-city {
+  flex: 0 0 32%;
+}
+.tour-container > .tour-wrapper > .tour-cities > .tour-city > .img-wrap {
+  overflow: hidden;
+}
+.tour-container > .tour-wrapper > .tour-cities > .tour-city > .img-wrap > img {
+  width: 100%;
+  transition: all 0.5s;
+}
+.tour-container
+  > .tour-wrapper
+  > .tour-cities
+  > .tour-city
+  > .img-wrap
+  > img:hover {
+  opacity: 0.6;
+  transform: scale(1.2);
+}
+.tour-container > .tour-wrapper > .tour-cities > .tour-city > .tour-contents {
+  background-color: var(--text-light);
+  padding: 1em;
+}
+.tour-container
+  > .tour-wrapper
+  > .tour-cities
+  > .tour-city
+  > .tour-contents
+  > .city-nm {
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+.tour-container
+  > .tour-wrapper
+  > .tour-cities
+  > .tour-city
+  > .tour-contents
+  > .city-date {
+  font-size: 0.875em;
+  color: var(--text-gray);
+  margin-bottom: 1em;
+}
+.tour-container
+  > .tour-wrapper
+  > .tour-cities
+  > .tour-city
+  > .tour-contents
+  > .city-content {
+  font-size: 0.875em;
+  color: var(--text-dark-5);
+  margin-bottom: 1em;
+}
+.tour-container
+  > .tour-wrapper
+  > .tour-cities
+  > .tour-city
+  > .tour-contents
+  > .buy-btn {
+  display: inline-block;
+  background-color: var(--text-dark);
+  color: var(--text-light);
+  padding: 0.625em 1em;
+  transition: all 0.5s ease-in-out;
+}
+.tour-container
+  > .tour-wrapper
+  > .tour-cities
+  > .tour-city
+  > .tour-contents
+  > .buy-btn:hover {
+  background-color: var(--text-d);
+  color: var(--text-dark);
+}
+
+/* contact-container */
+.contact-container > .contact-wrapper {
+}
+.contact-container > .contact-wrapper > .contact-slogan {
+  margin-bottom: 3.5em;
+}
+.contact-container > .contact-wrapper > .contact-contents {
+  display: flex;
+}
+.contact-container > .contact-wrapper > .contact-contents > .wrap {
+  flex-basis: 50%;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.contact-container > .contact-wrapper > .contact-contents > .info-wrap {
+}
+.contact-container
+  > .contact-wrapper
+  > .contact-contents
+  > .info-wrap
+  > .info-item {
+  padding: 0.5em 0;
+}
+.contact-container
+  > .contact-wrapper
+  > .contact-contents
+  > .info-wrap
+  > .info-item
+  > .info-icon {
+  margin-right: 0.5em;
+}
+.contact-container > .contact-wrapper > .contact-contents > .form-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact-container > .contact-wrapper > .contact-contents > .form-wrap input {
+  width: calc(50% - 8px);
+  margin: 0 0.5em 0.5em 0;
+}
+.contact-container
+  > .contact-wrapper
+  > .contact-contents
+  > .form-wrap
+  .btn-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.contact-container
+  > .contact-wrapper
+  > .contact-contents
+  > .form-wrap
+  .btn-wrap
+  > button {
+  background-color: var(--text-dark);
+  color: var(--text-light);
+  padding: 0.625em 1em;
+  transition: all 0.5s ease-in-out;
+  margin-right: 0.625em;
+}
+.contact-container
+  > .contact-wrapper
+  > .contact-contents
+  > .form-wrap
+  .btn-wrap
+  > button:hover {
+  background-color: var(--text-d);
+  color: var(--text-dark);
+}
+.contact-container > .location-wrapper {
+}
+
+/* footer-container */
+.footer-container > .link-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+.footer-container > .link-wrap > .link-item {
+  margin: 0 0.25em;
+  color: var(--text-7);
+}
+.footer-container > .link-wrap > .link-item:hover {
+  opacity: 0.6;
+}
+.footer-container > .copyright-wrap {
+  color: var(--text-7);
 }
